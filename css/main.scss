@@ -1,0 +1,50 @@
+$font-fam: helvetica,sans-serif;
+$font-size: 18px;
+$bg-color: lightgreen;
+$container-width: 600px;
+$text-color: blue;
+
+body {
+    background-color: $bg-color;
+    font-family: $font-fam;
+    font-size: $font-size;
+    color: $text-color;
+}
+ .container {
+     width: $container-width;
+     $text-color: red !global;
+     color: $text-color;
+ }
+
+ p {
+     color: $text-color;
+ }
+
+ nav {
+     ul {
+         list-style: none;
+         li {
+             display: inline-block;
+             a {
+                 display: block;
+                 padding: 10px;
+                 text-decoration: none;
+                 &:hover {
+                     border-bottom: 2px solid $text-color;
+                     margin-bottom: 1px;
+                 }
+             }
+         }
+     }
+ }
+
+ button {
+     background-color: lightblue;
+     padding: 5px;
+     color: $text-color;
+    &:hover {
+        background-color: $text-color;
+    }&:focus {
+        background-color: aqua;
+    }
+ }

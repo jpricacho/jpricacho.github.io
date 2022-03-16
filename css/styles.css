@@ -1,0 +1,111 @@
+body {
+    background-image: linear-gradient(45deg,#150050,#3F0071,#610094);
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(45deg,#150050,#3F0071,#610094);
+}
+
+#cb-logo {
+    width: auto;
+    height: 110px;
+}
+
+.socmed-icons i:hover {
+    color: #bd42ff;
+}
+
+nav > ul > li > a:hover {
+    border-bottom: 5px solid #bd42ff;
+}
+
+
+.divdiv {
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    background-color: aqua;
+}
+
+/* .box {
+    width: auto;
+    height: 250px;
+    background-color: aqua;
+
+} */
+
+.news1 {
+    grid-area: news1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.news2 {
+    grid-area: news2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.news3 {
+    grid-area: news3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.news4 {
+    grid-area: news4;
+}
+.news5 {
+    grid-area: news5;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+ #zoomIn:hover figure::after{
+    content: '';
+    background-color: rgba(208, 43, 223, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 15px;
+    left: 12px;
+    right: 12px;
+    overflow: hidden;
+}
+
+.column#zoomIn img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.column#zoomIn:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.column img {
+    /* display: block; */
+    width: 100%;
+    height: 300px;
+}
+
+#zoomIn {
+    position: relative;
+}
+
+#zoomIn figure {
+    overflow: hidden;
+}
+
