@@ -1,0 +1,18 @@
+.main-class, .class1, .class2 {
+  color: #333;
+  border: 1px solid red;
+  margin: 0 0 10px;
+  -webkit-box-shadow: 5px 10px blue;
+          box-shadow: 5px 10px blue;
+}
+
+.class1 {
+  background: orange;
+  -webkit-box-shadow: 3px 5px 0 lightgray;
+          box-shadow: 3px 5px 0 lightgray;
+}
+
+.class2 {
+  background: yellowgreen;
+  text-transform: uppercase;
+}
