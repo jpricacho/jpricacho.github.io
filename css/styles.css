@@ -32,59 +32,43 @@ nav > ul > li > a:hover {
     border-bottom: 5px solid #ad23f8;
 }
 
-
-.divdiv {
-    display: grid;
-    grid-template-columns: 50% 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 5px;
-    background-color: aqua;
-}
-
-.col1 {
-    background-color: rgb(153, 86, 5);
-    max-height: 70vh;
-    margin: 0 -10px;
-}
-.box1 {
-    background-color: bisque;
-    max-height: 35vh;
-}
-.box2 {
-    background-color: darkorange;
-    max-height: 35vh;
-}
-.box3 {
-    background-color: darkgreen;
-    max-height: 35vh;
-}
-.box4 {
-    background-color: deeppink;
-    max-height: 35vh;
-}
-
 .featured-news {
     padding-top: 0.5rem;
     position: relative;
-    box-shadow: 5px -5px 20px -5px rgb(184, 183, 183);
+    /* box-shadow: 5px -5px 20px -5px rgb(184, 183, 183); */
     background-color: rgb(14, 14, 75);
 }
 
-.featured-news h4::after {
+.featured-section {
+    border-top: 5px solid #bd42ff;
+    border-bottom: 5px solid #bd42ff;
+}
+
+/* .featured-news h4::after {
     content: '';
-    border-top: 5px solid #d27eff;
+    border-top: 10px solid #d27eff;
     display: block;
     position: absolute;
-    top: 30px;
-    left: 240px;
-    right: 20px;
+    top: 45px;
+    left: 150px;
+    right: 250px;
     bottom: 0;
     width: auto;
-}
+    transform: skewX(-15deg);
+} */
 
 .nav-link, .join, .sec-text {
     font-weight: 700;
-    font-size: larger;
+    /* font-size: larger; */
+}
+
+.sec-text em {
+    border-radius: 0.2em;
+    position: relative;
+    background: white;
+    background: linear-gradient(to right, mediumturquoise, mediumpurple);
+    transform: skewX(-10deg);
+    display: block;
 }
 
 
@@ -95,7 +79,7 @@ nav > ul > li > a:hover {
     width: auto;
     /* height: 100vh; */
     overflow: hidden;
-    object-fit: fill;
+    object-fit: contain;
     background-blend-mode: darken;
 }
 
@@ -110,7 +94,7 @@ nav > ul > li > a:hover {
 }
 
 .about-rating {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 500;
     margin-top: 10px
 }
@@ -142,8 +126,12 @@ nav > ul > li > a:hover {
 .image .overlay {
     position: absolute;
     bottom: 0;
-    padding: 90px 0 70px 25px;
-    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem;
+    /* width: 50%; */
+    /* height: 200px; */
     font-size: 20px;
     z-index: 5;
     text-align: center;
@@ -183,11 +171,6 @@ nav > ul > li > a:hover {
     bottom: 0px
 }
 
-.meta-author {
-    font-size: 15px;
-    font-weight: 500;
-}
-
 .meta-caption {
     font-weight: 500;
     font-size: 18px;
@@ -206,31 +189,75 @@ nav > ul > li > a:hover {
 
 /* footer */
 
-.footer {
-    margin-top: 100px;
+.footer-logo {
+    margin: 0;
+    width: auto;
+    height: 125px;
 }
 
-small {
-    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+.footer-link a {
+    color: white;
 }
 
-.bold-text {
-    color: #989c9e !important
+.footer-link a:hover {
+    color: #610094;
 }
 
-.mt-55 {
-    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+.footer-icons li {
+    overflow: hidden;
+    list-style: none;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: #610094;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    /* transition: all 0.5s; */
+    transition: all 0.3s ease-out;
 }
 
-h3 {
-    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+.footer-icons li span {
+    display: none;
 }
 
-.social {
-    font-size: 21px !important
+.footer-icons li:hover span {
+    display: block;
+    padding-left: 5px;
 }
 
-.rights {
-    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+.footer-icons li:hover {
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    padding: 0 10px;
 }
 
+.footer-btm em{
+    border-radius: 0.2em;
+    position: relative;
+    background: white;
+    background: linear-gradient(to right, mediumturquoise, mediumpurple);
+    transform: skewX(-10deg);
+    padding: 0 0.5rem;
+    display: inline-block;
+    color: black;
+}
+
+.about-img {
+    position: relative;
+}
+
+.about-cb-logo img {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 25%;
+    height: auto;
+}
