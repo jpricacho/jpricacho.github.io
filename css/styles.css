@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     margin: 0px;
     overflow-x: hidden;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 header, .fn-card {
@@ -218,8 +219,6 @@ nav > ul > li > a:hover {
     cursor: pointer;
     position: relative;
     z-index: 1;
-    /* transition: all 0.5s; */
-    transition: all 0.3s ease-out;
 }
 
 .footer-icons li span {
@@ -239,7 +238,7 @@ nav > ul > li > a:hover {
     padding: 0 10px;
 }
 
-.footer-btm em{
+.footer-btm a {
     border-radius: 0.2em;
     position: relative;
     background: white;
@@ -254,10 +253,10 @@ nav > ul > li > a:hover {
     position: relative;
 }
 
-.about-cb-logo img {
+.about-logo {
     position: absolute;
-    top: 35%;
-    left: 35%;
-    width: 25%;
+    width: 30%;
     height: auto;
+    top: 50%;
+    left: 35%;
 }
