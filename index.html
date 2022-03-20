@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/98d0bc51e1.js" crossorigin="anonymous"></script>
     <title>CryptoBuzz | Metaverse and Crypto Portal</title>
 </head>
 <body>
@@ -29,10 +31,10 @@
                 <li class="nav-item">
                   <a class="nav-link active text-white fs-5" aria-current="page" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nft-news-link">
                   <a class="nav-link text-white fs-5" href="#">NFT News</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item crypto-news-link">
                   <a class="nav-link text-white fs-5" href="#">Crypto News</a>
                 </li>
                 <li class="nav-item">
@@ -47,10 +49,20 @@
                 <a class="text-white" href="#"><i class="bi-twitch fs-5 pe-2"></i></a>
                 <a class="text-white" href="#"><i class="bi-discord fs-5"></i></a>
             </div>
+            <div class="row nft-preview collapse">
+                <div class="card col-4 card-body">
+                    <img src="img/Bloktopia.jpg" alt="" style="width:40%; height:auto;">
+                </div>
+            </div>
+            <div class="row crypto-preview collapse">
+                <div class="card col-4 card-body">
+                    <img src="img/Bloktopia.jpg" alt="" style="width:40%; height:auto;">
+                </div>
+            </div>
         </nav>
-        <div class="row">
+        <div class="row featured-articles">
             <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 px-0 ">
-                <a href="#" class="meta-link">
+                <a href="news/what_is_bloktopia.html" class="meta-link">
                     <div class="image"> <img src="img/Bloktopia.jpg" alt="">
                         <div class="overlay">
                             <p class="meta-head lh-1 fw-bold fs-2">What Is Bloktopia?</p>
@@ -61,7 +73,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 px-0 ">
-                <a href="#" class="meta-link">
+                <a href="news/top_metaverse_platforms_in_2022_to_watch.html" class="meta-link">
                     <div class="image"> <img src="img/Top_Metaverse_Platforms_2022_Watch.jpg" alt="">
                         <div class="overlay">
                             <p class="meta-head lh-1 fw-bold fs-2">The Top Metaverse Platforms in 2022 to Watch</p>
@@ -359,7 +371,8 @@
                 </div>
             </div>
         </div>
-    </div
+    </div>
+    <script src="js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

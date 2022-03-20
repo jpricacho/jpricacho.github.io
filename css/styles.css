@@ -36,7 +36,6 @@ nav > ul > li > a:hover {
 .featured-news {
     padding-top: 0.5rem;
     position: relative;
-    /* box-shadow: 5px -5px 20px -5px rgb(184, 183, 183); */
     background-color: rgb(14, 14, 75);
 }
 
@@ -45,22 +44,8 @@ nav > ul > li > a:hover {
     border-bottom: 5px solid #bd42ff;
 }
 
-/* .featured-news h4::after {
-    content: '';
-    border-top: 10px solid #d27eff;
-    display: block;
-    position: absolute;
-    top: 45px;
-    left: 150px;
-    right: 250px;
-    bottom: 0;
-    width: auto;
-    transform: skewX(-15deg);
-} */
-
 .nav-link, .join, .sec-text {
     font-weight: 700;
-    /* font-size: larger; */
 }
 
 .sec-text em {
@@ -259,4 +244,100 @@ nav > ul > li > a:hover {
     height: auto;
     top: 50%;
     left: 35%;
+}
+
+/* share */
+
+.btn-social,
+.btn-social:visited,
+.btn-social:focus,
+.btn-social:hover,
+.btn-social:active {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity .15s ease-in-out;
+}
+
+.btn-social:hover,
+.btn-social:active {
+ opacity: .75;
+}
+
+.btn-fb {
+  background-color: #3b5998;
+}
+
+.btn-tw {
+  background-color: #1da1f2;
+}
+
+.btn-gp {
+  background-color: #db4437;
+}
+
+.btn-rd {
+  background-color: #ff4500;
+}
+
+
+.btn-social-outline {
+  background-color: transparent;
+  background-image: none;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.btn-fb-outline {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+
+.btn-fb-outline:hover,
+.btn-fb-outline:active {
+  color: #ffffff;
+  background-color: #3b5998;
+}
+
+.btn-tw-outline {
+  color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.btn-tw-outline:hover,
+.btn-tw-outline:active {
+  color: #ffffff;
+  background-color: #1da1f2;
+}
+
+
+.btn-gp-outline {
+  color: #db4437;
+  border-color: #db4437;
+}
+
+.btn-gp-outline:hover,
+.btn-gp-outline:active {
+  color: #ffffff;
+  background-color: #db4437;
+}
+
+.btn-rd-outline {
+  color: #ff4500;
+  border-color: #ff4500;
+}
+
+.btn-rd-outline:hover,
+.btn-rd-outline:active {
+  color: #ffffff;
+  background-color: #ff4500;
+}
+
+
+.share-btn a {
+  flex-grow: 1;
+  margin-right: 0.25rem;
+}
+
+.share-btn a:last-child {
+  margin-right: 0rem;
 }

@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .banner::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-            opacity: .7;
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <style>
+        .mycontent {
+            display: none;
         }
-    </style>
+    </style> -->
     <title>Document</title>
 </head>
 <body>
-    <section class="banner">
-        <h1>Hello World</h1>
-    </section>
+    <a id="link" href="#">Hover Me</a>
+    <div class="mycontent d-none">
+        MAGIC!
+    </div>
+    <script>
+        $("#link").mouseover(function(){
+            $(".mycontent").removeClass("d-none");
+        });
+        $("#link").mouseout(function(){
+            $(".mycontent").addClass("d-none");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
