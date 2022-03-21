@@ -1,13 +1,11 @@
 $(".nft-news-link").mouseover(function(){
-    $(".nft-preview").collapse("toggle");
-    // }, function() {
-    //     $(".nft-preview").collapse("toggle");
+    $(".nft-preview").collapse("show");
+    $(".crypto-preview").collapse("hide");
 });
 
 $(".crypto-news-link").mouseover(function(){
-    $(".crypto-preview").collapse("toggle");
-    // }, function() {
-    //     $(".nft-preview").collapse("toggle");
+    $(".nft-preview").collapse("hide");
+    $(".crypto-preview").collapse("show");
 });
 
 $(".nft-preview").mouseleave(function(){
@@ -16,4 +14,14 @@ $(".nft-preview").mouseleave(function(){
 
 $(".crypto-preview").mouseleave(function(){
     $(".crypto-preview").collapse("hide");
+});
+
+$(".home-link").mouseover(function(){
+    $(".crypto-preview").collapse("hide");
+    $(".nft-preview").collapse("hide");
+});
+
+$(".about-link").mouseover(function(){
+    $(".crypto-preview").collapse("hide");
+    $(".nft-preview").collapse("hide");
 });
