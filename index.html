@@ -189,12 +189,32 @@
                 <div class="col-lg-6 mx-auto">
                     <p class="fs-5 mb-4 text-white">Get fresh updates, news and events straight to your mail. <br>Join our newsletter.</p>
                     <div class="d-sm-flex justify-content-sm-center">
-                        <button type="button" class="btn btn-outline-warning btn-lg px-4 me-sm-3 fw-bold">Subscribe</button>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Subscribe with Email" aria-label="Subscribe with Email" aria-describedby="button-addon2">
+                            <button type="button" class="btn btn-outline-warning btn-lg px-4 me-sm-3 fw-bold" data-bs-toggle="modal" data-bs-target="#subscribe-modal">Subscribe</button>
+                        </div>
                     </div>
                 </div>
                 </div>
             </div>
         </div>
+        <div class="modal" tabindex="-1" id="subscribe-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">You are on board!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Thank you for Subscribing! Please check your email for confirmation.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="row text-white featured-section">
             <div class="col-lg-8 featured-news text-center">
                 <div class="row">
