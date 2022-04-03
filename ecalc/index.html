@@ -9,6 +9,11 @@
     <title>Simple E-Calculator</title>
 </head>
 <body>
+    <div class="tip text-center bg-info mt-2">
+        <h3>You can also use keyboard numpad.</h3>
+        <h3>Use backspace to cancel input, delete to clear all input.</h3>
+    </div>
+   
     <div class="calculator">
         
         <div class="bttns">
@@ -31,7 +36,7 @@
     
             <button class="oprButton" value="-" id="opr1">-</button>
             <button class="oprButton" value="+" id="opr2">+</button>
-            <button class="oprButton" value="x" id="opr3">x</button>
+            <button class="oprButton" value="x" id="opr3">*</button>
             <button class="oprButton" value="÷" id="opr4">÷</button>
     
             <button class="eqButton" value="=" id="eq">=</button>
@@ -39,7 +44,11 @@
             <button class="cancelButton" value="cancel" id="c1">C</button>
             <button class="cancelButton" value="clear" id="c2">CE</button>
         </div>
-    </div>   
+
+        
+    </div>
+    
+    
     <script src="js/calc.js"></script>
 </body>
 </html>

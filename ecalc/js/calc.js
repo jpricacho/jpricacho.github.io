@@ -16,25 +16,25 @@ let num3;
 document.onkeyup = getKey;
 
 function getKey(e) {
-    if (e.keyCode == 96) {
+    if (e.keyCode == 96 || e.keyCode == 48) {
         document.querySelector("#num0").click();
-    } else if (e.keyCode == 97) {
+    } else if (e.keyCode == 97 || e.keyCode == 49) {
         document.querySelector("#num1").click();
-    } else if (e.keyCode == 98) {
+    } else if (e.keyCode == 98 || e.keyCode == 50) {
         document.querySelector("#num2").click();
-    } else if (e.keyCode == 99) {
+    } else if (e.keyCode == 99 || e.keyCode == 51) {
         document.querySelector("#num3").click();
-    } else if (e.keyCode == 100) {
+    } else if (e.keyCode == 100 || e.keyCode == 52) {
         document.querySelector("#num4").click();
-    } else if (e.keyCode == 101) {
+    } else if (e.keyCode == 101 || e.keyCode == 53) {
         document.querySelector("#num5").click();
-    } else if (e.keyCode == 102) {
+    } else if (e.keyCode == 102 || e.keyCode == 54) {
         document.querySelector("#num6").click();
-    } else if (e.keyCode == 103) {
+    } else if (e.keyCode == 103 || e.keyCode == 55) {
         document.querySelector("#num7").click();
-    } else if (e.keyCode == 104) {
+    } else if (e.keyCode == 104 || e.keyCode == 56) {
         document.querySelector("#num8").click();
-    } else if (e.keyCode == 105) {
+    } else if (e.keyCode == 105 || e.keyCode == 57) {
         document.querySelector("#num9").click();
     } else if (e.keyCode == 110) {
         document.querySelector("#numDot").click();
