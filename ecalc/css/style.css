@@ -163,4 +163,7 @@ button:hover {
         height: 40px;
         padding-right: 0px;
     }
+    .calculator {
+        width: 50%;
+    }
 }
