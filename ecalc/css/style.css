@@ -1,5 +1,4 @@
 body {
-    /* width: 30%; */
     margin: auto;
     box-sizing: border-box;
 }
@@ -13,89 +12,112 @@ body {
     transform: translate(-50%, -50%);
     width: 30%;
     height: auto;
+}
 
-  }
-
-  #result {
+#result {
     width: 100%;
-    font-size: 5rem;
     height: 80px;
+    font-size: 5rem;
     border: none;
     background-color: #252525;
     color: #fff;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 0px;
     padding-left: 10px;
-  }
+}
 
-  .bttns {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-      grid-template-areas: 
-      "num1 num2 num3 opr1 c1"
-      "num4 num5 num6 opr2 c2"
-      "num7 num8 num9 opr3 eq"
-      "num0 num0 numDot opr4 eq";
 
-  };
 
-  #num1 {
-      grid-area: num1;
-  }
-  #num2 {
-      grid-area: num2;
-  }
-  #num3 {
-      grid-area: num3;
-  }
-  #num4 {
-      grid-area: num4;
-  }
-  #num5 {
-      grid-area: num5;
-  }
-  #num6 {
-      grid-area: num6;
-  }
-  #num7 {
-      grid-area: num7;
-  }
-  #num8 {
-      grid-area: num8;
-  }
-  #num9 {
-      grid-area: num9;
-  }
-  #num0 {
-      grid-area: num0;
-  }
-  #opr1 {
-      grid-area: opr1;
-  }
-  #opr2 {
-      grid-area: opr2;
-  }
-  #opr3 {
-      grid-area: opr3;
-  }
-  #opr4 {
-      grid-area: opr4;
-  }
-  #c1 {
-      grid-area: c1;
-  }
-  #c2 {
-      grid-area: c2;
-  }
-  #eq {
-      grid-area: eq;
-  }
-  #numDot {
-      grid-area: numDot;
-  }
+.bttns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "displayResult displayResult displayResult displayResult displayResult"
+    "num1 num2 num3 opr1 c1"
+    "num4 num5 num6 opr2 c2"
+    "num7 num8 num9 opr3 eq"
+    "num0 num0 numDot opr4 eq";
 
-  button {
+}
+
+#num1 {
+    grid-area: num1;
+}
+
+#num2 {
+    grid-area: num2;
+}
+
+#num3 {
+    grid-area: num3;
+}
+
+#num4 {
+    grid-area: num4;
+}
+
+#num5 {
+    grid-area: num5;
+}
+
+#num6 {
+    grid-area: num6;
+}
+
+#num7 {
+    grid-area: num7;
+}
+
+#num8 {
+    grid-area: num8;
+}
+
+#num9 {
+    grid-area: num9;
+}
+
+#num0 {
+    grid-area: num0;
+}
+
+#opr1 {
+    grid-area: opr1;
+}
+
+#opr2 {
+    grid-area: opr2;
+}
+
+#opr3 {
+    grid-area: opr3;
+}
+
+#opr4 {
+    grid-area: opr4;
+}
+
+#c1 {
+    grid-area: c1;
+}
+
+#c2 {
+    grid-area: c2;
+}
+
+#eq {
+    grid-area: eq;
+}
+
+#numDot {
+    grid-area: numDot;
+}
+
+.displayResult {
+    grid-area: displayResult;
+    background-color: #d7eaf7;
+}
+
+button {
     background-color: #fff;
     border-radius: 3px;
     border: 1px solid #c4c4c4;
@@ -105,33 +127,40 @@ body {
     background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
     box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
     text-shadow: 0 1px rgba(255,255,255,.4);
-  }
+}
 
-  button:hover {
+button:hover {
     background-color: #eaeaea;
-  }
-  
-  .oprButton {
+}
+
+.oprButton {
     color: #337cac;
-  }
-  
-  .cancelButton {
+}
+
+.cancelButton {
     background-color: #f0595f;
     border-color: #b0353a;
     color: #fff;
-  }
-  
-  .cancelButton:hover {
+}
+
+.cancelButton:hover {
     background-color: #f17377;
-  }
-  
-  .eqButton {
+}
+
+.eqButton {
     background-color: #2e86c0;
     border-color: #337cac;
     color: #fff;
-  }
-  
-  .eqButton:hover {
-    background-color: #4e9ed4;
-  }
+}
 
+.eqButton:hover {
+    background-color: #4e9ed4;
+}
+
+@media screen and (max-width: 768px) {
+    #result {
+        font-size: 2rem;
+        height: 40px;
+        padding-right: 0px;
+    }
+}
