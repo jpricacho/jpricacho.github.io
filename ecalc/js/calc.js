@@ -19,7 +19,6 @@ numButton.forEach((evt) => {
 
 
 function getVal(event) {
-    // alert(event.target.value);
     joinedResult1.push(event.target.value);
     result.value = joinedResult1.join("");
 
@@ -35,7 +34,6 @@ function calculate(event) {
     joinedResult1 = [];
     oprToUse = ops;
     if (ops == "-") {
-        // let equals = num1 - num2;
         if (!num1 && !num2) {
             num1 = Number(result.value);
             prevOpr = ops;
@@ -82,7 +80,6 @@ function calculate(event) {
         }
     };
     if (ops == "+") {
-        // let equals = num1 - num2;
         if (!num1 && !num2) {
             num1 = Number(result.value);
             prevOpr = ops;
@@ -129,7 +126,6 @@ function calculate(event) {
         }
     };
     if (ops == "x") {
-        // let equals = num1 - num2;
         if (!num1 && !num2) {
             num1 = Number(result.value);
             prevOpr = ops;
@@ -176,7 +172,6 @@ function calculate(event) {
         }
     };
     if (ops == "÷") {
-        // let equals = num1 - num2;
         if (!num1 && !num2) {
             num1 = Number(result.value);
             prevOpr = ops;
@@ -284,4 +279,4 @@ function cancelClear(event) {
         num1 = "";
         num2 = "";
     }
-}
+};
