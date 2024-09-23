@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/98d0bc51e1.js" crossorigin="anonymous"></script>
+    <title>CryptoBuzz | Metaverse and Crypto Portal</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row p-4 align-items-center">
+            <div class="col-12 col-md-7 col-lg-8 logo">
+                <a class="text-white text-decoration-none fs-4"href="#"><img id="cb-logo" src="img/cb-logo.png" alt=""></a>
+            </div>
+            <div class="d-none d-md-block col-md-5 col-lg-4 searchbar">
+                <form action="#">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text"><i class="bi-search"></i></span>
+                      </div>
+                </form>
+            </div>
+        </header>
+        <nav class="row bg-dark sticky-top">
+            <ul class="col-lg-8 nav nav-bar justify-content-center justify-content-lg-start">
+                <li class="nav-item home-link">
+                  <a class="nav-link active text-white fs-5" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item nft-news-link">
+                  <a class="nav-link text-white fs-5" href="news/index.html">NFT News</a>
+                </li>
+                <li class="nav-item crypto-news-link">
+                  <a class="nav-link text-white fs-5" href="#">Crypto News</a>
+                </li>
+                <li class="nav-item about-link">
+                  <a class="nav-link text-white fs-5" href="about.html">About Us</a>
+                </li>
+            </ul>
+            <div class="col-lg-4 socmed-icons m-auto d-none d-md-block text-center pb-sm-3 pb-lg-0">
+                <span class="text-white pe-4 join">FOLLOW US</span>
+                <a class="text-white" href="#"><i class="bi-facebook fs-5 pe-2"></i></a>
+                <a class="text-white" href="#"><i class="bi-twitter fs-5 pe-2"></i></a>
+                <a class="text-white" href="#"><i class="bi-youtube fs-5 pe-2"></i></a>
+                <a class="text-white" href="#"><i class="bi-twitch fs-5 pe-2"></i></a>
+                <a class="text-white" href="#"><i class="bi-discord fs-5"></i></a>
+            </div>
+            <div class="row nft-preview collapse">
+                <div class="card col-lg-4 text-center bg-dark border-0">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card-body">
+                            <img class="card-img" src="img/axie2.png" alt="">
+                            <div class="card-title mt-2">
+                                <p class="meta-head lh-1 fw-bold fs-2 text-white">Updates on Axie Marketplace</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-lg-4 text-center bg-dark border-0">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card-body">
+                            <img class="card-img" src="img/axie5.png" alt="">
+                            <div class="card-title mt-2">
+                                <p class="meta-head lh-1 fw-bold fs-2 text-white">PH Government to tax Axie Infinity's Players</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-lg-4 text-center bg-dark border-0">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card-body">
+                            <img class="card-img" src="img/axie4.jpeg" alt="">
+                            <div class="card-title mt-2">
+                                <p class="meta-head lh-1 fw-bold fs-2 text-white">Axie Origins is right around the corner</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row crypto-preview collapse">
+                <div class="card col-lg-4 text-center bg-dark border-0">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card-body">
+                            <img class="card-img" src="img/gazprom.jpg" alt="">
+                            <div class="card-title mt-2">
+                                <p class="meta-head lh-1 fw-bold fs-2 text-white">Russia Tries to Replace Apple Pay and Google Pay with Gazprom Pay</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-lg-4 text-center bg-dark border-0">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card-body">
+                            <img class="card-img" src="img/meta.webp" alt="">
+                            <div class="card-title mt-2">
+                                <p class="meta-head lh-1 fw-bold fs-2 text-white">Two Crypto Lawsuits to Watch: Meta and Coinbase Enter New Legal Battles</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card col-lg-4 text-center bg-dark border-0">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card-body">
+                            <img class="card-img" src="img/btc-eth.jpg" alt="">
+                            <div class="card-title mt-2">
+                                <p class="meta-head lh-1 fw-bold fs-2 text-white">Bitcoin and Ethereum Consolidate, AAVE and CAKE Jump</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="row featured-articles">
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 px-0 ">
+                <a href="news/what_is_bloktopia.html" class="meta-link">
+                    <div class="image"> <img src="img/Bloktopia.jpg" alt="">
+                        <div class="overlay">
+                            <p class="meta-head lh-1 fw-bold fs-2">What Is Bloktopia?</p>
+                            <p class="meta-caption lh-1">Here's how a virtual 21-story building is changing the Metaverse</p>
+                            <span class="meta-date">Patrick Ricacho | March 18,2022</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 px-0 ">
+                <a href="news/top_metaverse_platforms_in_2022_to_watch.html" class="meta-link">
+                    <div class="image"> <img src="img/Top_Metaverse_Platforms_2022_Watch.jpg" alt="">
+                        <div class="overlay">
+                            <p class="meta-head lh-1 fw-bold fs-2">The Top Metaverse Platforms in 2022 to Watch</p>
+                            <p class="meta-caption lh-1">Seven companies leading the rise of the metaverse</p>
+                            <span class="meta-date">Patrick Ricacho | March 18,2022</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 px-0 ">
+                <a href="news/how_the_metaverse_is_transforming_real_estate.html" class="meta-link">
+                    <div class="image"> <img src="img/How_Metaverse_Transforming_Real_Estate.jpg" alt="">
+                        <div class="overlay">
+                            <p class="meta-head lh-1 fw-bold fs-2">How the Metaverse is Transforming Real Estate</p>
+                            <p class="meta-caption lh-1">Investors have spent millions of dollars buying land in the Metaverse over the last few months</p>
+                            <span class="meta-date">Patrick Ricacho | March 18,2022</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 px-0 ">
+                <a href="news/hsbc_enters_sandbox.html" class="meta-link">
+                    <div class="image"> <img src="img/hsbc.webp" alt="">
+                        <div class="overlay">
+                            <p class="meta-head lh-1 fw-bold fs-2">HSBC enters The Sandbox to offer educational finance games</p>
+                            <p class="meta-caption lh-1">Partnership hopes to promote financial literacy via gamified experiences within the metaverse.</p>
+                            <span class="meta-date">Patrick Ricacho | March 18,2022</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 px-0 ">
+                <a href="news/instagram_is_adding_nft_soon.html" class="meta-link">
+                    <div class="image"> <img src="img/meme.jpg" alt="">
+                        <div class="overlay">
+                            <p class="meta-head lh-1 fw-bold fs-2">Instagram is adding NFTs soon, says Mark Zuckerberg</p>
+                            <p class="meta-caption lh-1">Meta CEO stated he hopes NFT minting will be available in the coming months.</p>
+                            <span class="meta-date">Patrick Ricacho | March 18,2022</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 px-0 ">
+                <a href="news/amex_possible_entry_to_metaverse.html" class="meta-link">
+                    <div class="image"> <img src="img/amex.webp" alt="">
+                        <div class="overlay">
+                            <p class="meta-head lh-1 fw-bold fs-2">Amex trademark filings suggest possible entry to the metaverse</p>
+                            <p class="meta-caption lh-1">Readying to provide “virtual concierge services.”</p>
+                            <span class="meta-date">Patrick Ricacho | March 18,2022</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row hero">
+            <div class="text-secondary px-4 py-5 text-center">
+                <div class="py-5">
+                <h1 class="display-5 fw-bold text-white">Be on the lookout!</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="fs-5 mb-4 text-white">Get fresh updates, news and events straight to your mail. <br>Join our newsletter.</p>
+                    <div class="d-sm-flex justify-content-sm-center">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Subscribe with Email" aria-label="Subscribe with Email" aria-describedby="button-addon2">
+                            <button type="button" class="btn btn-outline-warning btn-lg px-4 me-sm-3 fw-bold" data-bs-toggle="modal" data-bs-target="#subscribe-modal">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" id="subscribe-modal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">You are on board!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Thank you for Subscribing! Please check your email for confirmation.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="row text-white featured-section">
+            <div class="col-lg-8 featured-news text-center">
+                <div class="row">
+                    <h2 class="sec-text text-uppercase"><em class="p-sm-3">Featured News</em></h2>
+                </div>
+                <div class="row pt-5 g-4">
+                    <div class="col-sm-6 shadow-lg">
+                        <div class="card fn-card">
+                            <img src="img/aavegotchi.jpg" alt="" class="card-img-top">
+                            <div class="card-body p-4">
+                                <h3 class="card-title">
+                                    <a href="#" class="text-decoration-none text-white text-uppercase fw-bold">Aavegotchi Confirms Launch Date for the Gotchiverse</a> 
+                                </h3>
+                                <p class="card-text">
+                                    In the haunted section of the crypto sphere, ghostly happenings are about to reach their ethereal peak.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 shadow-lg">
+                        <div class="card fn-card">
+                            <img src="img/vempire.jpg" alt="" class="card-img-top">
+                            <div class="card-body p-4">
+                                <h3 class="card-title">
+                                    <a href="#" class="text-decoration-none text-white text-uppercase fw-bold">vEmpire Launches Epic Roman Legion Trading Card Battle Platform</a> 
+                                </h3>
+                                <p class="card-text">
+                                    Thanks in large to its disciplined and organised battalions, the like of which the world had never seen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 shadow-lg">
+                        <div class="card fn-card">
+                            <img src="img/MetaENGINE-Seed-Funding-NFT.jpg" alt="" class="card-img-top">
+                            <div class="card-body p-4">
+                                <h3 class="card-title">
+                                    <a href="#" class="text-decoration-none text-white text-uppercase fw-bold">Web3 Game Developer metaENGINE Raises $4 Million in Seed Funding</a> 
+                                </h3>
+                                <p class="card-text">
+                                    First-of-its-kind blockchain gaming platform metaENGINE has raised $4 million in its recent seed funding round.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 shadow-lg">
+                        <div class="card fn-card">
+                            <img src="img/Poker-Dogs-Club-NFT-Metaverse-Decentraland.jpg" alt="" class="card-img-top">
+                            <div class="card-body p-4">
+                                <h3 class="card-title">
+                                    <a href="#" class="text-decoration-none text-white text-uppercase fw-bold">Poker Dogs Club Brings Card Playing NFT Canines to the Metaverse</a> 
+                                </h3>
+                                <p class="card-text">
+                                    Every so often an activity enters the public sphere that is so perfect it remains unchanged for hundreds of years.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 shadow-lg">
+                        <div class="card fn-card">
+                            <img src="img/Poker-Dogs-Club-NFT-Metaverse-Decentraland.jpg" alt="" class="card-img-top">
+                            <div class="card-body p-4">
+                                <h3 class="card-title">
+                                    <a href="#" class="text-decoration-none text-white text-uppercase fw-bold">Poker Dogs Club Brings Card Playing NFT Canines to the Metaverse</a> 
+                                </h3>
+                                <p class="card-text">
+                                    Every so often an activity enters the public sphere that is so perfect it remains unchanged for hundreds of years.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 shadow-lg">
+                        <div class="card fn-card">
+                            <img src="img/Poker-Dogs-Club-NFT-Metaverse-Decentraland.jpg" alt="" class="card-img-top">
+                            <div class="card-body p-4">
+                                <h3 class="card-title">
+                                    <a href="#" class="text-decoration-none text-white text-uppercase fw-bold">Poker Dogs Club Brings Card Playing NFT Canines to the Metaverse</a> 
+                                </h3>
+                                <p class="card-text">
+                                    Every so often an activity enters the public sphere that is so perfect it remains unchanged for hundreds of years.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 hot-nft bg-light text">
+                <div class="row text-center">
+                    <h4 class="sec-text pt-3 text-dark text-uppercase"><em class="p-sm-3">Featured Games</em></h4>
+                </div>
+                <div class="row g-5 pt-md-5">
+                    <div class="col-12">
+                        <div class="row shadow-lg">
+                            <div class="container m-0">
+                                <div class="card mb-3">
+                                    <div class="row text-dark">
+                                        <img src="img/axie3.png" alt="" class="card-img-top">
+                                        <div class="col-lg-4 card-lg-border">
+                                            <div class="ratings text-center pt-2 pt-lg-5 ps-lg-3">
+                                                <span class="badge bg-success">4.1 <i class="bi-star"></i></span><span class="d-block about-rating">AXIE INFINITY</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="rating-progress-bars">
+                                                <div class="progress-1 p-2">
+                                                    <div class="dev">
+                                                        <span>Developer: <a href="https://axieinfinity.com/" target="_blank"><b>Sky Mavis</b></a></span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"> Popularity </div>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-custom" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Profitability</div>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Sustainability</div>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Playability</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row shadow-lg">
+                            <div class="container mt-3">
+                                <div class="card mb-3">
+                                    <div class="row text-dark">
+                                        <img src="img/sandbox.webp" alt="" class="card-img-top">
+                                        <div class="col-lg-4 card-lg-border">
+                                            <div class="ratings text-center pt-2 pt-lg-5 ps-lg-3">
+                                                <span class="badge bg-success">4.0 <i class="bi-star"></i></span><span class="d-block about-rating">THE SANDBOX GAME</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="rating-progress-bars">
+                                                <div class="progress-1 p-2">
+                                                    <div class="dev">
+                                                        <span>Developer: <a href="https://www.sandbox.game/en/" target="_blank"><b>PIXOWL INC</b></a></span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"> Popularity </div>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-custom" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Profitability</div>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Sustainability</div>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Users/Players</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row shadow-lg">
+                            <div class="container mt-3">
+                                <div class="card mb-3">
+                                    <div class="row text-dark">
+                                        <img src="img/axie3.png" alt="" class="card-img-top">
+                                        <div class="col-lg-4 card-lg-border">
+                                            <div class="ratings text-center pt-2 pt-lg-5 ps-lg-3">
+                                                <span class="badge bg-success">4.1 <i class="bi-star"></i></span><span class="d-block about-rating">VERY GOOD</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="rating-progress-bars">
+                                                <div class="progress-1 p-2">
+                                                    <div class="dev">
+                                                        <span>Developer: <a href="https://axieinfinity.com/" target="_blank"><b>Sky Mavis</b></a></span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"> Popularity </div>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-custom" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Profitability</div>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Sustainability</div>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Playability</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>  
+        </div>
+        <div class="row bg-dark footer p-5 justify-content-center">
+            <div class="col-12">
+                <footer class="text-center">
+                    <figure><img src="img/cb-logo-footer.png" alt="" class="footer-logo"></figure>
+                </footer>
+                <ul class="list-unstyled d-md-flex gap-4 justify-content-center">
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Home</a></li>
+                    <li class="footer-link"><a class="text-decoration-none" href="#">Contact</a></li>
+                    <li class="footer-link"><a class="text-decoration-none" href="privacy.html">Privacy Policy</a></li>
+                    <li class="footer-link"><a class="text-decoration-none" href="terms.html">Terms of Use</a></li>
+                </ul>
+                <ul class="list-unstyled d-flex d-inline footer-icons justify-content-center">
+                    <li><a class="stretched-link" href="#" target="_blank"><i class="text-white fs-5 bi-facebook"></i></a><span>@cryptobuzz</span></li>
+                    <li><a class="stretched-link" href="#" target="_blank"><i class="text-white fs-5 bi-twitter"></i></a><span>@cryptobuzz</span></li>
+                    <li><a class="stretched-link" href="#" target="_blank"><i class="text-white fs-5 bi-discord"></i></a><span>@cryptobuzz</span></li>
+                    <li><a class="stretched-link" href="#" target="_blank"><i class="text-white fs-5 bi-youtube"></i></a><span>@cryptobuzz</span></li>
+                    <li><a class="stretched-link" href="#" target="_blank"><i class="text-white fs-5 bi-telegram"></i></a><span>@cryptobuzz</span></li>
+                </ul>
+                <div class="container text-center pt-4">
+                    <span class="footer-btm text-white">
+                        Copyright &copy; 2022 <a class="fb-lnk-footer text-decoration-none lh-1" href="http://www.facebook.com/jpricacho" target="_blank"><em>James Patrick Ricacho</em></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
